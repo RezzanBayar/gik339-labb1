@@ -1,8 +1,8 @@
 console.log("Innan blocket");
 {
-  let name = "Sara";
-  const age = 22;
-  var city = "Borlänge";
+  let name = "Elin";
+  const age = 24;
+  var city = "Stockholm";
 
   console.log(name);
   console.log(age);
