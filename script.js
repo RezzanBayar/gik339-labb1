@@ -14,13 +14,14 @@ console.log(city);
 /*
 Reflektion uppgift 2: 
 
-Var, let och const används för att skapa variabler.
-Let och const fungerar bara inuti blocket medan
-var även fungerar utanför blocket.
+När jag arbetetade med variabler lärde jag mig att var, let och const
+har olika regler för var de kan användas. 
 
-När jag testade console.log såg jag att alla tre
-fungerade inuti blocket, men bara var fungerade
-utanför.
+Jag såg att let och const är begränsade till blocket där de deklareras, 
+medan var kan användas utanför blocket.
+
+Jag lärde mig också att const inte kan ändras efter att den har deklarerats.
+Detta är användbart när man vill vara säker på att värdet inte ändras av misstag.
 */
 const add = (num1, num2) => {
   console.log(num1 == 0);
@@ -53,22 +54,22 @@ console.log(add(5, 3));
 /*
 Reflektion uppgift 3:
 
-Om jag hade använt let istället för const hade
-jag kunnat ändra värdet på variabeln add.
+Att const används för att deklarera funtionen 
+och förhindra att variabeln delldelas ett nytt värde. 
 
-Jag hade också kunnat skriva funktionen så här:
+Att let hade tillåtit att variabeln delldelas ett nytt värde,
+men hade inte påverkat själva funktionen.
 
-function add(num1, num2) {
-    return num1 + num2;
-}
+Att en arrow function använder => och kan skrivas med en vanlig
+function-deklaration i stället. 
 
-Return betyder att funktionen skickar tillbaka
-ett resultat, i detta fall summan av två tal.
+Att return skixkar tillbaka resultatet från beräkningen. 
 */
+
 /*
 Reflektion uppgift 4:
 
-En ternary operator är ett kortare sätt att skriva
+En ternary operator är ett kortare alternativ sätt att skriva
 if och else.
 
 Två likhetstecken (==) jämför värden medan tre
@@ -119,11 +120,21 @@ Det sista värdet på num1 blir 0 eftersom värdet
 inte ändras i testerna. Sum blir undefined eftersom
 test 2 inte fungerar då "0" är text och inte en siffra.
 
-Test 1 fungerar inte eftersom sum är false.
-Test 2 fungerar inte eftersom "0" är text.
-Test 3 fungerar inte eftersom num1 är text.
-Test 4 fungerar och ger -5 eftersom båda värdena
-är siffror.
-Test 5 fungerar inte eftersom arg1 saknar värde.
-Test 6 fungerar inte eftersom inga argument skickas in.
+Test 1: sum har värdet false, vilket inte är ett tal.
+
+Test 2: "0" är en textsträng och inte ett numeriskt värde.
+Därför returnerar funktionen inget värde och sum blir undefined.
+
+Test 3: Det är sum2 som innehåller texten "num1", inte num1.
+Därför returnerar funktionen inget värde.
+
+Test 4: -5 + 0 = -5, vilket är korrekt.
+
+Test 5: arg1 äre undefined eftersom den deklarerats utan något värde.
+Därför returnerar funktionen inget värde.
+
+Test 6: Båda parametrarna saknar argument, vilket gör att de är undefined.
+
+Variablerna: num1 behåller värdet 0, medan sum kan ändras 
+eftersom den deklarerats med let.
 */
